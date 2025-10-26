@@ -26,7 +26,7 @@ app.include_router(dashboard.router)
 @app.on_event("startup")
 async def on_startup():
     create_tables()
-    init_db()
+    #init_db()
 
 @app.get("/")
 def root():
